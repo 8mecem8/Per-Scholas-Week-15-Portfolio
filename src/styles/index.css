@@ -1,0 +1,77 @@
+@import url(./reset.css);
+
+@font-face 
+{
+    font-family: Aeonik-Air;
+    src: url(./fonts/Aeonik-Air.otf);
+}
+
+
+
+@font-face
+{
+    font-family: JuliusSansOne;
+    src: url(./fonts/JuliusSansOne.ttf),
+}
+@font-face
+{
+    font-family: 'Kokturk';
+    src: url(./fonts/Kokturk.ttf) format('truetype'),
+}
+
+@font-face
+{
+    font-family: 'Orkun';
+    src: url(./fonts/Orkun.ttf) format('truetype'),
+}
+
+
+@font-face
+{
+    font-family: 'Gokturk';
+    src: url(./fonts/Gokturk.eot),
+      url('./fonts/Gokturk.eot?#') format('embedded-opentype'),
+      url('./fonts/Gokturk.woff') format('woff'),
+      url('./fonts/Gokturk.ttf') format('truetype');
+}
+
+
+:root 
+{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+
+    --main-bg-color:#151e1e  ; 
+    --main-font: 'Aeonik-Air';
+    --main-font-main: 'JuliusSansOne';
+    --main-font-gokturk: 'Gokturk';
+    --main-font-color: rgb(255, 255, 255);
+
+
+    --main-font-Orkun: 'Orkun';
+    --main-font-kokturk: 'Kokturk';
+}
+
+
+body 
+{
+    background-color: var(--main-bg-color);
+}
+
+
+#root
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

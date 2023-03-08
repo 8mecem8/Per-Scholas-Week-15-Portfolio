@@ -1,0 +1,169 @@
+.cukbiuy{font-family:var(--main-font);font-weight:600;position:absolute;margin:0.2rem;top:26px;bottom:0;right:0;left:0;display:grid;grid-template-columns:repeat(20,5%);grid-template-rows:repeat(16,500px);}.cukbiuy:hover{border-color:yellow;}
+
+.lej2gqp{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;justify-items:center;place-items:center;position:fixed;left:50px;top:70px;}
+.lkviad7{color:var(--main-font-color);font-family:var(--main-font-gokturk);font-size:35px;-webkit-letter-spacing:-7px;-moz-letter-spacing:-7px;-ms-letter-spacing:-7px;letter-spacing:-7px;}
+
+.mc5vh3{grid-column:5/20;grid-row:1/9;display:grid;grid-template-columns:repeat(20,5%);grid-template-rows:repeat(12,5%);}
+.cmshfeh{grid-column:1/20;grid-row:2/9;color:var(--main-font-color);}.cmshfeh > h1{font-size:32px;-webkit-text-stroke:3px;-webkit-letter-spacing:11px;-moz-letter-spacing:11px;-ms-letter-spacing:11px;letter-spacing:11px;}.cmshfeh > p{font-size:130px;-webkit-text-stroke:2px;-webkit-letter-spacing:-2px;-moz-letter-spacing:-2px;-ms-letter-spacing:-2px;letter-spacing:-2px;font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;font-weight:bold;}.cmshfeh > *{font-family:var(--main-font);}
+
+/***
+    The new CSS reset - version 1.6.0 (last updated 29.4.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+@font-face 
+{
+    font-family: Aeonik-Air;
+    src: url(assets/e72a0cf9cc8411371947.otf);
+}
+
+
+
+@font-face
+{
+    font-family: JuliusSansOne;
+    src: url(assets/2de04709e76a8c3a838d.ttf),
+}
+@font-face
+{
+    font-family: 'Kokturk';
+    src: url(assets/ef0f73369f934946dcf6.ttf) format('truetype'),
+}
+
+@font-face
+{
+    font-family: 'Orkun';
+    src: url(assets/e2739cce6349cbe96af8.ttf) format('truetype'),
+}
+
+
+@font-face
+{
+    font-family: 'Gokturk';
+    src: url(assets/f68fc810bb6a5dc8580d.eot),
+      url(assets/f68fc810bb6a5dc8580d.eot?) format('embedded-opentype'),
+      url(assets/1504ab851ba264edc98d.woff) format('woff'),
+      url(assets/74931b30af973361ac4e.ttf) format('truetype');
+}
+
+
+:root 
+{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+
+    --main-bg-color:#151e1e  ; 
+    --main-font: 'Aeonik-Air';
+    --main-font-main: 'JuliusSansOne';
+    --main-font-gokturk: 'Gokturk';
+    --main-font-color: rgb(255, 255, 255);
+
+
+    --main-font-Orkun: 'Orkun';
+    --main-font-kokturk: 'Kokturk';
+}
+
+
+body 
+{
+    background-color: #151e1e  ;
+    background-color: var(--main-bg-color);
+}
+
+
+#root
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/*# sourceMappingURL=styles-8cc3e65ec3adefd76bb6.css.map*/
