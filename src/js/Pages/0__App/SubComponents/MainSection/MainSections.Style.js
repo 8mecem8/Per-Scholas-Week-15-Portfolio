@@ -100,6 +100,7 @@ export const Content3 = styled.div`
             z-index:49;
             border-radius: 8px;
             padding: 30px 0;
+            backdrop-filter: blur(8px);
             
             font-weight: 900;
             color: white;
