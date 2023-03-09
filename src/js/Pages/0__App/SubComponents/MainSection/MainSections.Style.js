@@ -8,7 +8,7 @@ export const MainContent = styled.div`
 
     display: grid;
     grid-template-columns: repeat(20,5%);
-    grid-template-rows: repeat(16,5%);
+    grid-template-rows: repeat(16,7%); //increase to make page smaller
 `
 
 
