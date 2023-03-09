@@ -43,11 +43,20 @@ export const Content2 = styled.div`
     {
         list-style: none;
         user-select: none;
-        padding: 41px;
-
+        padding: 51px;
+        z-index: 50;
+        background: #151e1e;
+        position: absolute;
+        right: 186px;
+        border-radius: 85px;
+        transition: 1s;
+        
+        
         > p:first-letter {padding-left:5%}
-        > p { font-size: 28px;letter-spacing: 2px;}
-        >summary{text-align: end;cursor: pointer;   > span{font-size:25px;color: turquoise;}}
+        > p { font-size: 20px;letter-spacing: 1px;}
+        >summary{text-align: end;cursor: pointer;z-index: 50;;background: #151e1e; border-radius: 85px;padding:10px;   > span{font-size:25px;color: turquoise !important;}}
+
+        &[open]{right:0}
     }
 `
 
@@ -58,11 +67,11 @@ export const Content2 = styled.div`
 export const Content3 = styled.div`
 
     grid-column: 1/20;
-    grid-row: 11/15;
-
+    grid-row: 12/15;
     position: relative;
-    
     color: var(--main-font-color);
+
+     
     > figure
     {
         width: 49%;
@@ -88,7 +97,7 @@ export const Content3 = styled.div`
             text-align: center;
             background: #5c626847;
             transition:2s;
-            z-index:100;
+            z-index:49;
             border-radius: 8px;
             padding: 30px 0;
             
@@ -116,6 +125,17 @@ export const Content3 = styled.div`
     }
 
 
-    
-
 `
+
+export const Infotext = styled.p`
+        position: absolute;
+        top: -103px;
+        left: 0;
+        font-size: 50px;
+        font-size: 60px;
+        -webkit-text-stroke: 3px;
+        -webkit-letter-spacing: 11px;
+        -moz-letter-spacing: 11px;
+        -ms-letter-spacing: 11px;
+        letter-spacing: 11px;
+    `

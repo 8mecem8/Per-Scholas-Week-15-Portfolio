@@ -11,6 +11,7 @@ import { Container,MainContent,Content1} from './index.style'
 import useMainStore from '../../Stores/0__MainStore.jsx'
 import Logo from './SubComponents/Logo';
 import MainSections from './SubComponents/MainSection/MainSections.jsx';
+import Socials from './SubComponents/Socials/Socials';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
 
         <Logo />
         <MainSections />
-        
+        <Socials />
       </Container>
     </>
   )

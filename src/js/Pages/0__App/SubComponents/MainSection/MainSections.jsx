@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 //import Styles...
 import { styled } from '@linaria/react';
-import { MainContent, Content1, Content2, Content3 } from './MainSections.Style';
+import { MainContent, Content1, Content2, Content3, Infotext } from './MainSections.Style';
 
 
 function MainSections() {
@@ -58,11 +58,13 @@ function MainSections() {
 
                 <Content3>
 
+                        <Infotext>Projects</Infotext>
+
                 <figure>
                     <img src="https://user-images.githubusercontent.com/42888722/163483137-c590c2eb-096a-4bde-bb12-16b1a592be79.png" alt="Elephant at sunset"/>
                     <figcaption style={{background:'#54ca9cba'}}> 
                     <h3> React E-commerce Web Application </h3>
-                        <p>Tech Stack: React.js , Material Ui , Redux , MongoDB, Firebase</p>
+                        <p>Tech Stack: React.js , Material Ui , Redux , MongoDB, Firebase, Stripe Api</p>
                         <p>
                             <Link target="_blank"  to={'https://github.com/8mecem8/React-JS-eCommerce-Web-App'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
                             <Link target="_blank"  to={'https://pazaar-react.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
@@ -74,7 +76,7 @@ function MainSections() {
                     <img src="https://user-images.githubusercontent.com/42888722/146282168-fb71a348-f984-40e6-88d8-880bec7f6aac.png" alt="Elephant at sunset"/>
                     <figcaption style={{background:'rgb(255 153 0 / 57%)'}}>
                         <h3><span style={{color: '#093cf7'}}>Mini Amazon like</span> E-commerce Web Application</h3>
-                        <p>Tech Stack: Vanilla Javascript(ES6 Methods), mongo db</p>
+                        <p>Tech Stack: Vanilla Javascript(ES6 Methods),Node.js + Express, Mongodb, PayPal API</p>
                         <p>
                             <Link target="_blank"  to={'https://github.com/8mecem8/Vanilla-Js-eCommerce'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
                             <Link target="_blank"  to={'https://buyozon-ecommerce-app.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
@@ -85,10 +87,9 @@ function MainSections() {
                     <img src="https://user-images.githubusercontent.com/42888722/215924622-f2666e60-8ca0-4af8-81f7-3636e3c6e0a9.png" alt="Elephant at sunset"/>
                     <figcaption style={{background:'#cca347c2'}}> 
                     <h3> <span style={{color: 'rgb(247 224 9)',left:'145px',top:'-1px'}}>Mini</span> Product Store 🛒</h3>
-                        <p>Tech Stack: React.js , Material Ui , Redux , MongoDB, Firebase</p>
+                        <p>Tech Stack: HTML, CSS Vanilla Js(ES6 Methods), Node.js + Express, MongoDb</p>
                         <p>
-                            <Link target="_blank"  to={'https://github.com/8mecem8/React-JS-eCommerce-Web-App'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
-                            <Link target="_blank"  to={'https://pazaar-react.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
+                            <Link target="_blank"  to={'https://github.com/8mecem8/MongoDb-Product-Store--MOD-2-PROJECT-'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
                         </p>
                     </figcaption>
                 </figure>
