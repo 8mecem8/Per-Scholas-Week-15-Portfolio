@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 //import Styles...
 import { styled } from '@linaria/react';
-import { MainContent, Content1, Content2, Content3 } from './MainSections';
+import { MainContent, Content1, Content2, Content3 } from './MainSections.Style';
 
 
 function MainSections() {
@@ -35,12 +35,12 @@ function MainSections() {
 
                     <p>I am interested in innovative ventures that align with my interests and expertise that challenge me to expand my skillset and knowledge in quality project development.</p>
                     <i>When</i>
-                    <p>Please feel free to contact with me 🌟</p>
+                    <p>Please feel free to contact with me  <a href="mailto:mehmetcemonal@gmail.com">📨</a></p>
 
                     <details>
-                        <summary>So want to learn More About Me</summary>
+                        <summary>So want to learn <span>More About Me 👇</span></summary>
                         <p>
-                            My journey into engineering started at a young age when I first dabbled in web development with simple HTML, CSS, JS, and Flash in the 90s. However, it wasn't until later that I fully discovered my passion for coding.</p>
+                            My journey into Software Engineering started at a young age when I first dabbled in web development with simple HTML, CSS, JS, and Flash in the 90s. However, it wasn't until later that I fully discovered my passion for coding.</p>
 
                             <p>I initially studied computer engineering in university, but I didn't feel like I was learning in a creative way, so I ended up switching my major to a management-related area. However, my love for web projects never stopped, and I continued working on various projects using HTML, CSS, JS, and Joomla.</p>
 
@@ -57,6 +57,52 @@ function MainSections() {
                 </Content2>
 
                 <Content3>
+
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/42888722/163483137-c590c2eb-096a-4bde-bb12-16b1a592be79.png" alt="Elephant at sunset"/>
+                    <figcaption style={{background:'#54ca9cba'}}> 
+                    <h3> React E-commerce Web Application </h3>
+                        <p>Tech Stack: React.js , Material Ui , Redux , MongoDB, Firebase</p>
+                        <p>
+                            <Link target="_blank"  to={'https://github.com/8mecem8/React-JS-eCommerce-Web-App'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
+                            <Link target="_blank"  to={'https://pazaar-react.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
+                        </p>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/42888722/146282168-fb71a348-f984-40e6-88d8-880bec7f6aac.png" alt="Elephant at sunset"/>
+                    <figcaption style={{background:'rgb(255 153 0 / 57%)'}}>
+                        <h3><span style={{color: '#093cf7'}}>Mini Amazon like</span> E-commerce Web Application</h3>
+                        <p>Tech Stack: Vanilla Javascript(ES6 Methods), mongo db</p>
+                        <p>
+                            <Link target="_blank"  to={'https://github.com/8mecem8/Vanilla-Js-eCommerce'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
+                            <Link target="_blank"  to={'https://buyozon-ecommerce-app.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/42888722/215924622-f2666e60-8ca0-4af8-81f7-3636e3c6e0a9.png" alt="Elephant at sunset"/>
+                    <figcaption style={{background:'#cca347c2'}}> 
+                    <h3> <span style={{color: 'rgb(247 224 9)',left:'145px',top:'-1px'}}>Mini</span> Product Store 🛒</h3>
+                        <p>Tech Stack: React.js , Material Ui , Redux , MongoDB, Firebase</p>
+                        <p>
+                            <Link target="_blank"  to={'https://github.com/8mecem8/React-JS-eCommerce-Web-App'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
+                            <Link target="_blank"  to={'https://pazaar-react.onrender.com/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/42888722/215939908-3b7c115b-8a79-4fea-99c2-bc8c87bdd375.png" alt="Elephant at sunset"/>
+                    <figcaption>
+                    <h3> 🌒 Space Battle Web Game🌠 </h3>
+                        <p>Tech Stack: HTML, JavaScript(ES6 Methods) , Css</p>
+                        <p>
+                            <Link target="_blank"  to={'https://github.com/8mecem8/SpaceBattleAssignment'} > 🔗 Github Link <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>    
+                            <Link target="_blank"  to={'https://8mecem8.github.io/SpaceBattleAssignment/'} > 🔗 Live Project Link  <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></Link>
+                        </p>
+                    </figcaption>
+                </figure>
 
                 </Content3>
 
