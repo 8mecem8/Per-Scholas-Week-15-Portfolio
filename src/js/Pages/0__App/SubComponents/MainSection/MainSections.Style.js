@@ -83,11 +83,15 @@ export const Content3 = styled.div`
 
       
 
-        > img{width: 100%;height:100%;object-fit:cover;transition:1s;border-radius: 20px;transition:1s}
+        > img{width: 100%;height:100%;object-fit:cover;transition:1s;border-radius: 20px;transition:1s;box-shadow: 0px 0px 1px 5px #d2dfde36;}
+
+        // will change these hard-coded positons
         &:nth-child(1){position:absolute;top:0;left:0}
         &:nth-child(2){position:absolute;top:0;right:0;}
         &:nth-child(3){position:absolute;bottom:0;left:0;}
         &:nth-child(4){position:absolute;bottom:0;right:0}
+
+
         > figcaption
         {
             opacity:0;
@@ -120,8 +124,9 @@ export const Content3 = styled.div`
 
         :hover img
         {
-            scale: 1.4;
+            scale: 1.2;
             z-index: 2;
+            box-shadow: 0px 0px 1px 5px turquoise;
         }
     }
 
