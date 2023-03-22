@@ -10,6 +10,7 @@ export const SocialContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    user-select: none;
 
     > a
     {
@@ -21,4 +22,14 @@ export const SocialContainer = styled.div`
             filter: contrast(0.5);
         }
     }
+
+
+
+
+
+    @media (max-width: 505px)
+      {
+        left:20px;
+        bottom: 40px;
+      }
 `

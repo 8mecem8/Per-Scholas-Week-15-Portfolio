@@ -6,9 +6,10 @@ export const MainContent = styled.div`
     grid-column: 5/20;
     grid-row: 1/9;
 
+    user-select: none;
     display: grid;
     grid-template-columns: repeat(20,5%);
-    grid-template-rows: repeat(16,7%); //increase to make page smaller
+    grid-template-rows: repeat(18,7%); //increase to make page smaller
 `
 
 
@@ -19,9 +20,21 @@ export const Content1 = styled.div`
 
     color: var(--main-font-color);
 
-    > h1 { font-size: 32px;-webkit-text-stroke: 3px;letter-spacing: 11px;}
-    > p { font-size: 130px;-webkit-text-stroke: 2px;letter-spacing: -2px;font-family: system-ui;font-weight: bold;line-height: 102px;}
     > * { font-family: var(--main-font);}
+    > h1 {
+         font-size: 32px;-webkit-text-stroke: 3px;letter-spacing: 11px;
+
+         @media (max-width: 780px){font-size: 25px;-webkit-text-stroke: 1px; }
+         @media (max-width: 603px){font-size: 20px;-webkit-text-stroke: 1px; }
+         @media (max-width: 480px){font-size: 10px;-webkit-text-stroke: 0px; }
+        }
+    > p {
+         font-size: 130px;-webkit-text-stroke: 2px;letter-spacing: -2px;font-family: system-ui;font-weight: bold;line-height: 102px;
+        
+         @media (max-width: 780px){font-size: 100px;-webkit-text-stroke: 1px; }
+         @media (max-width: 603px){font-size: 80px;-webkit-text-stroke: 1px; }
+         @media (max-width: 480px){font-size: 70px;-webkit-text-stroke: 1px;line-height: 60px;}
+        }
     `
 
 
@@ -124,7 +137,7 @@ export const Content3 = styled.div`
 
         :hover img
         {
-            scale: 1.2;
+            scale: 1.1;
             z-index: 2;
             box-shadow: 0px 0px 1px 5px turquoise;
         }
@@ -134,14 +147,21 @@ export const Content3 = styled.div`
 `
 
 export const Infotext = styled.p`
-        position: absolute;
-        top: -103px;
-        left: 0;
-        font-size: 50px;
-        font-size: 60px;
-        -webkit-text-stroke: 3px;
-        -webkit-letter-spacing: 11px;
-        -moz-letter-spacing: 11px;
-        -ms-letter-spacing: 11px;
-        letter-spacing: 11px;
-    `
+    position: absolute;
+    top: -103px;
+    left: 0;
+    font-size: 50px;
+    font-size: 60px;
+    -webkit-text-stroke: 3px;
+    -webkit-letter-spacing: 11px;
+    -moz-letter-spacing: 11px;
+    -ms-letter-spacing: 11px;
+    letter-spacing: 11px;
+`
+
+
+export const Footer = styled.div`
+    grid-column: 1/20;
+    grid-row: 16/19;
+    position: relative;
+`

@@ -27,9 +27,11 @@ function App() {
   return (
     <>
       <Container>
-
         <Logo />
+
         <MainSections />
+        
+
         <Socials />
       </Container>
     </>

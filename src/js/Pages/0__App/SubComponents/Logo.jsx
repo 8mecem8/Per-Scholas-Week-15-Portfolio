@@ -13,6 +13,13 @@ const LogoContainer = styled.div`
     position: fixed;
     left:50px;
     top: 70px;
+    user-select: none;
+
+    @media (max-width: 505px)
+      {
+        left:20px;
+        top: 40px;
+      }
     
 `
 

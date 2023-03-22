@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 //import Styles...
 import { styled } from '@linaria/react';
-import { MainContent, Content1, Content2, Content3, Infotext } from './MainSections.Style';
+import { MainContent, Content1, Content2, Content3, Infotext, Footer } from './MainSections.Style';
 
 
 function MainSections() {
@@ -107,6 +107,9 @@ function MainSections() {
 
                 </Content3>
 
+                <Footer>
+
+                </Footer>
 
             </MainContent>
 
