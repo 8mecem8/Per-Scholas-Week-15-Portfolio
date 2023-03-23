@@ -35,7 +35,7 @@ function MainSections() {
 
                     <p>I am interested in innovative ventures that align with my interests and expertise that challenge me to expand my skillset and knowledge in quality project development.</p>
                     <i>When</i>
-                    <p>Please feel free to contact with me  <a href="mailto:mehmetcemonal@gmail.com">📨</a></p>
+                    <p>Please feel free to contact with me<a href="mailto:mehmetcemonal@gmail.com">📨</a></p>
 
                     <details>
                         <summary>So want to learn <span>More About Me 👇</span></summary>

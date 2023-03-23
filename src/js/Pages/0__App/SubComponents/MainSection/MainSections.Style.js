@@ -21,6 +21,7 @@ export const Content1 = styled.div`
     color: var(--main-font-color);
 
     > * { font-family: var(--main-font);}
+
     > h1 {
          font-size: 32px;-webkit-text-stroke: 3px;letter-spacing: 11px;
 
@@ -28,13 +29,18 @@ export const Content1 = styled.div`
          @media (max-width: 603px){font-size: 20px;-webkit-text-stroke: 1px; }
          @media (max-width: 480px){font-size: 10px;-webkit-text-stroke: 0px; }
         }
+
     > p {
          font-size: 130px;-webkit-text-stroke: 2px;letter-spacing: -2px;font-family: system-ui;font-weight: bold;line-height: 102px;
         
          @media (max-width: 780px){font-size: 100px;-webkit-text-stroke: 1px; }
          @media (max-width: 603px){font-size: 80px;-webkit-text-stroke: 1px; }
          @media (max-width: 480px){font-size: 70px;-webkit-text-stroke: 1px;line-height: 60px;}
+         @media (max-width: 414px){font-size: 65px;}
         }
+
+
+        
     `
 
 
@@ -49,9 +55,13 @@ export const Content2 = styled.div`
     > h2 { font-size: 60px;-webkit-text-stroke: 3px;letter-spacing: 11px;padding:15px 0px;}
     > h3 { font-size: 40px;padding:10px 0px;padding-left:5%}
     > p:first-letter {padding-left:5%}
-    > p { font-size: 19px;letter-spacing: 2px; > a {font-size: 45px;}}
+    > p {
+         font-size: 19px;letter-spacing: 2px; > a {font-size: 45px;}
+        
+         @media (max-width: 480px){font-size: 18px;letter-spacing: 5px;line-height: 18px;padding:20px 0px;}
+        }
 
-
+    > p:nth-last-child(2){font-size: 20px; >a{@media (max-width: 480px){padding-left:80%}}}
     > details
     {
         list-style: none;
@@ -66,11 +76,25 @@ export const Content2 = styled.div`
         
         
         > p:first-letter {padding-left:5%}
-        > p { font-size: 20px;letter-spacing: 1px;}
-        >summary{text-align: end;cursor: pointer;z-index: 50;;background: #151e1e; border-radius: 85px;padding:10px;   > span{font-size:25px;color: turquoise !important;}}
+        > p { 
+                font-size: 20px;letter-spacing: 1px;
+
+                @media (max-width: 480px){font-size: 18px;letter-spacing: 2px;line-height: 23px;padding: 20px 0px;}
+            }
+        >summary{text-align: end;cursor: pointer;z-index: 50;;background: #151e1e; border-radius: 85px;padding:10px;   > span{font-size:25px;color: turquoise !important;}   @media (max-width: 750px){background:#151e1e00;}}
 
         &[open]{right:0}
+
+
+        
+        @media (max-width: 750px){padding: 20px;right: 17%;background:#151e1e00;}
+        
+        
     }
+
+
+
+    @media (max-width: 480px){grid-row: 4/8;}
 `
 
 
@@ -99,10 +123,10 @@ export const Content3 = styled.div`
         > img{width: 100%;height:100%;object-fit:cover;transition:1s;border-radius: 20px;transition:1s;box-shadow: 0px 0px 1px 5px #d2dfde36;}
 
         // will change these hard-coded positons
-        &:nth-child(1){position:absolute;top:0;left:0}
-        &:nth-child(2){position:absolute;top:0;right:0;}
-        &:nth-child(3){position:absolute;bottom:0;left:0;}
-        &:nth-child(4){position:absolute;bottom:0;right:0}
+        &:nth-child(1){position:absolute;top:0;left:0;@media (max-width: 480px){position:unset;top:unset;right:unset;}}
+        &:nth-child(2){position:absolute;top:0;right:0;@media (max-width: 480px){position:unset;top:unset;right:unset;}}
+        &:nth-child(3){position:absolute;bottom:0;left:0;@media (max-width: 480px){position:unset;top:unset;right:unset;}}
+        &:nth-child(4){position:absolute;bottom:0;right:0;@media (max-width: 480px){position:unset;top:unset;right:unset;}}
 
 
         > figcaption
@@ -126,6 +150,10 @@ export const Content3 = styled.div`
 
             > h3{font-size: 40px;position: relative;padding: 10px 0px; > span{font-size:20px;height: 100%;position: absolute;left: 10px;top: -15px; color: #e6d800;text-shadow: 0 0 1px black;}}
             > p{font-size: 20px;display: flex;justify-content: space-evenly;padding: 6px 0; > a{place-content: center;display: flex;}}
+
+
+
+            @media (max-width: 480px){max-width: 17rem;}
         }
 
 
@@ -141,10 +169,18 @@ export const Content3 = styled.div`
             z-index: 2;
             box-shadow: 0px 0px 1px 5px turquoise;
         }
+
+
+
+
+        @media (max-width: 480px){width: 19rem;}
+
     }
 
 
+    @media (max-width: 480px){grid-row: 10/12;display: flex;flex-direction: column;gap: 100px;width: 19rem;}
 `
+
 
 export const Infotext = styled.p`
     position: absolute;
@@ -164,4 +200,12 @@ export const Footer = styled.div`
     grid-column: 1/20;
     grid-row: 16/19;
     position: relative;
+
+
+
+
+
+
+
+    @media (max-width: 480px){grid-row: 14/19;}
 `
